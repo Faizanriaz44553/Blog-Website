@@ -1,4 +1,4 @@
-import {db , collection , addDoc} from "../firebase.js"
+import {db , collection , addDoc , getDocs } from "../firebase.js"
 
 let body = document.querySelector('body');
 let toggleButton = document.querySelector('#toggleButton');
@@ -32,6 +32,24 @@ const ceratUserFuntion = async ()=>{
       }
 }
 
+let postDiv = document.querySelector("#post-div")
+const postFuntion = async ()=>{
+    const querySnapshot = await getDocs(collection(db, "post"));
+querySnapshot.forEach((doc) => {
+    const {userDescription , userTital} = doc.data();
+    postDiv.innerHTML += `<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">${userTital}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p class="card-text">${userDescription}</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>`
+console.log(userDescription , userTital);
+});
+}
+postFuntion()
 creatModalButton.addEventListener("click" , ceratUserFuntion);
 
 

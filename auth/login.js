@@ -5,6 +5,9 @@ let errorMassage = document.getElementById('error')
 let button = document.getElementById('button')
 
 const signinFuntion = ()=>{
+  if (email.value === "admin@gmail.com" && password.value === "1234567890") {
+    window.location.href = "../dashboard/admin.html"
+  }
     event.preventDefault()
       button.innerHTML = "Login..."
     signInWithEmailAndPassword(auth, email.value, password.value)
