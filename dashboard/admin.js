@@ -1,4 +1,4 @@
-import { db , collection , addDoc , getDocs  } from "../firebase.js";
+import { db , collection , getDocs  } from "../firebase.js";
 
 let userInformation = document.querySelector("#user-information")
 const postFuntion = async ()=>{
@@ -15,3 +15,6 @@ console.log(userDescription , userTital);
 });
 }
 postFuntion()
+
+
+

@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", ()=> {
 });
 
 let creatModal = document.querySelector("#creatModal")
+creatModal.style.display = "none"
 let description = document.querySelector("#description")
+let plusIcon = document.querySelector("#plus-icon")
 let tital = document.querySelector("#tital")
 let creatModalButton = document.querySelector("#creat-project")
 const ceratUserFuntion = async ()=>{
@@ -31,6 +33,11 @@ const ceratUserFuntion = async ()=>{
         console.error("Error adding document: ", e);
       }
 }
+
+function showcreatfuntion() {
+  creatModal.style.display = "block"
+}
+plusIcon.addEventListener("click" , showcreatfuntion)
 
 let postDiv = document.querySelector("#post-div")
 const postFuntion = async ()=>{
