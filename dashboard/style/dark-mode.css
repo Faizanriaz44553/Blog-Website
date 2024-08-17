@@ -1,0 +1,18 @@
+.light-background{
+    background-color: var(--primary-color);
+}
+.dark-background{
+background-color: var(--black-color);
+}
+.dark-font-color{
+    color: var(--black-color);
+}
+.light-font-color{
+    color: var(--primary-color) !important;
+}
+:root {
+    --primary-color: #E5E5E5; /* Example primary color */
+    --secondary-color: #0078FF; /* Example secondary color */
+    --tertiary-color: #0ACF83; /* Example tertiary color */
+    --black-color: #050505e0; /* Example tertiary color */
+}
