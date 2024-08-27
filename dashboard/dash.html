@@ -25,7 +25,7 @@
 <body id="body">
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#">All Blog</a>
+          <a class="navbar-brand" href="#">The Blog</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,16 +35,13 @@
                 <span class="font-size-8 mright-3 crosar" id="plus-icon"><i class="fa-solid fa-plus"></i></span>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                <a class="nav-link active" aria-current="page" href="./dash.html">All Blogs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Newsletter</a>
+                <a class="nav-link" href="./newsletter.html">Newsletter</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,10 +67,25 @@
   <div id="creatModal" class="creatModal">
    <div class="creat-modal-first-div">
     <div class="creatmodalseconddiv">
-      <span class="modal-cross-icon"><i id="hideicon" class="fa-solid fa-xmark"></i></span><br>
+
+      <div class="uploadImages" id="imageModal">
+        <span class="modal-cross-icon"><i id="hideIcon" class="fa-solid fa-xmark"></i></span><br>
+        <h2 class="mtop-2 t-a-center">Upload Your Banner</h2>
+        <input class="mtop-4" type="file" id="post-images" multiple><br>
+        <div class="cencel-next-div-button">
+          <button type="button" class="btn btn-primary" id="nextButton">Next</button>
+          <button type="button" class="btn btn-danger" id="cencelButton">Cencel</button>
+        </div>
+      </div>
+
+      <div class="postDetail" id="postModal">
+        <span class="modal-cross-icon" id="hideIcon"><i class="fa-solid fa-xmark"></i></span><br>
       <input type="text" id="tital" placeholder="enter Tital"><br>
     <textarea name="" id="description" placeholder="Enter Description"></textarea><br>
+    <input type="text" id="link-blog" placeholder="Enter Blog Link">
     <button id="creat-project">Post</button>
+      </div>
+
     </div>
    </div>
   </div>
@@ -92,23 +104,24 @@
     </div>
   <h1 class="All-post">All post</h1>
       <div id="post-div" class="post-main-div">
-        <div id="loader" class="loader"></div>
+        <div id="loader" class="loader">
 
+        </div>
       </div>
 </div>
 <footer>
   <div class="container">
       <div class="footer-links">
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="./about.html">About</a>
+          <a href="./newsletter.html">Newsletter</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
       </div>
       <div class="social-links">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
+          <a href="https://www.facebook.com/profile.php?id=61560561183061&mibextid=ZbWKwL" target="_blank">Facebook</a>
+          <a href="https://x.com/DGumroad44089?t=BWluTbqeXQx6yYhjb9i1hA&s=09" target="_blank">Twitter</a>
+          <a href="https://github.com/Faizanriaz44553" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/faizan-riaz-773550300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
       </div>
       <p>&copy; 2024 Faizan Riaz. All Rights Reserved.</p>
   </div>

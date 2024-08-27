@@ -1,0 +1,167 @@
+
+:root {
+    --primary-color: #E5E5E5;
+    --secondary-color: #0078FF;
+    --tertiary-color: #0ACF83;
+    --black-color: #050505e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-intro, .our-journey, .our-mission, .what-we-offer, .testimonials {
+    margin-bottom: 40px;
+}
+
+.about-intro p, .our-journey p, .our-mission p, .what-we-offer ul, .testimonials p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.what-we-offer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.what-we-offer ul li {
+    background-color: var(--tertiary-color);
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team {
+    background-color: var(--secondary-color);
+    padding: 40px 0;
+    color: white;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.testimonial {
+    background-color: var(--tertiary-color);
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.admin-access {
+    background-color: var(--tertiary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.admin-access h2 {
+    margin-bottom: 15px;
+}
+
+.admin-access ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.admin-access li {
+    margin: 10px 0;
+}
+
+.admin-access p {
+    margin-top: 20px;
+}
+
+/* footer started */
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid var(--black-color);
+}
+
+footer .footer-links {
+    margin-bottom: 15px;
+}
+
+footer .footer-links a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #000;
+}
+
+footer .social-links a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 10px;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #000;
+}
+
+footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    color: var(--primary-color);
+}
+/* footer ended */

@@ -1,4 +1,4 @@
-import {auth , createUserWithEmailAndPassword , onAuthStateChanged } from "../firebase.js"
+import {auth , createUserWithEmailAndPassword , onAuthStateChanged ,ref, uploadBytesResumable  , storage , getDownloadURL } from "../firebase.js"
 let email = document.getElementById('email')
 let password = document.getElementById('password')
 let errorMassage = document.getElementById('error')
@@ -7,6 +7,9 @@ let button = document.getElementById('button')
 const signupFuntion = ()=>{
   event.preventDefault()
   button.innerHTML = "Signup..."
+  if (email.value === "admin@gmail.com" && password.value === "1234567890") {
+    window.location.href = "../dashboard/admin.html"
+  }
   createUserWithEmailAndPassword(auth, email.value, password.value)
   .then((userCredential) => {
     // Signed up 
